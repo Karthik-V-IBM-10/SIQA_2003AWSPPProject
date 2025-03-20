@@ -32,16 +32,40 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: SIQAJDBCAdapterTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 services:
+- serviceName: project.siqa_2003awspp.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: SIQA_2003AWSPPProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_2003awspp.integrations:JMSFlowTest
   packages:
   - name: SIQA_2003AWSPPProject
@@ -54,10 +78,16 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: publisher:publisher
   packages:
   - name: JMSTest
@@ -78,10 +108,38 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.siqa_2003awspp.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_2003AWSPPProject
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_2003awspp.integrations:SSL_JDBC_test
   packages:
   - name: SIQA_2003AWSPPProject
@@ -94,10 +152,16 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: SSL_JDBC_Test.services:insert_ssl
   packages:
   - name: SSL_JDBC_Test
@@ -118,10 +182,16 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_2003awspp.referencedata:ref1
   packages:
   - name: SIQA_2003AWSPPProject
@@ -134,10 +204,16 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_2003awspp.integrations:tppdaf
   packages:
   - name: SIQA_2003AWSPPProject
@@ -150,10 +226,16 @@ services:
     version: "1.0"
   - name: JMSTest
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmJDBCAdapter
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: services:add3Ints
   packages:
   - name: TPP_services_in_FCS
@@ -165,15 +247,15 @@ services:
 configurationVariables:
   jdbc.jdbcTestPool.waitingThread: "0"
   jdbc.jdbcTestPool.minConns: "0"
-  jdbc.jdbcTestPool.snoopenabled: "false"
   jdbc.jdbcTestPool.expireTime: "60000"
   jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
+  jdbc.jdbcTestPool.maxConns: "10"
+  jdbc.jdbcTestPool.userid: root
+  jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
+  jdbc.jdbcTestPool.spyenabled: "false"
+  jdbc.jdbcTestPool.snoopenabled: "false"
   jdbc.jdbcTestPool.password: "{AES}er+I3U8nDVm8F4DBRST1+A=="
   jdbc.jdbcTestPool.spyparms: SpyAttributes=(log=(file)logs/spy/jdbcTestPool.log;logTName=yes;timestamp=yes)
   jdbc.jdbcTestPool.dbURL: jdbc:mysql://mysql.test.local:3306/webm
   jdbc.jdbcTestPool.poolThreshold: "0"
-  jdbc.jdbcTestPool.maxConns: "10"
-  jdbc.jdbcTestPool.userid: root
-  jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
   jdbc.jdbcTestPool.useSSL: "false"
-  jdbc.jdbcTestPool.spyenabled: "false"
